@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ *      This file is part of Metwit <https://github.com/monossido/Metwit>
+ *      
+ *      Metwit is free software: you can redistribute it and/or modify
+ *      it under the terms of the GNU General Public License as published by
+ *      the Free Software Foundation, either version 3 of the License, or
+ *      (at your option) any later version.
+ *      
+ *      Metwit is distributed in the hope that it will be useful,
+ *      but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *      GNU General Public License for more details.
+ *      
+ *      You should have received a copy of the GNU General Public License
+ *      along with Metwit  If not, see <http://www.gnu.org/licenses/>.
+ *      
+ *-->
+<LinearLayout android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+       <LinearLayout style="@style/TitleBar">
+        <ImageView style="@style/TitleBarLogo"
+            android:contentDescription="description_logo"
+            android:src="@drawable/title_logo"
+            />
+
+        <View style="@style/TitleBarSpring" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="description_search"
+            android:src="@drawable/ic_title_search"
+            android:onClick="onSendClick" />
+    </LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:background="@drawable/background"
+   >
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="0dip"
+        android:layout_weight="1"
+        android:padding="6dip">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button android:id="@+id/home_btn_home"
+                style="@style/HomeButton"
+                android:onClick="onMainClick"
+                android:text="Home"
+                android:drawableTop="@drawable/home_btn_main"/>
+            <Button android:id="@+id/home_btn_invia"
+                style="@style/HomeButton"
+                android:onClick="onInviaClick"
+                android:text="Segnala"
+                android:drawableTop="@drawable/home_btn_segnala"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+            <Button android:id="@+id/home_btn_map"
+                style="@style/HomeButton"
+                android:onClick="onMappaClick"
+                android:text="Mappa"
+                android:drawableTop="@drawable/home_btn_mappa"/>
+            <Button android:id="@+id/home_btn_settings"
+                style="@style/HomeButton"
+                android:onClick="onSettingsClick"
+                android:text="Impostazioni"
+                android:drawableTop="@drawable/home_btn_impostazioni"/>
+        </LinearLayout>
+
+    </LinearLayout>
+     <HorizontalScrollView android:id="@+id/ScrollImg"
+ 			android:layout_width="fill_parent"
+ 			android:layout_height="75dip" 
+ 			android:background="#c0587f96" 
+ 			android:layout_marginBottom="5dip"
+ 			android:scrollbarAlwaysDrawHorizontalTrack="false">
+	<LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent">
+ 			<ImageView
+ 			android:id="@+id/Img1"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"		
+ 			android:layout_gravity="center_vertical"
+ 			android:layout_marginLeft="30dip"
+ 			android:background="@drawable/image_border"/>
+ 			<ProgressBar style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:id="@+id/Progress1" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_gravity="center_vertical" android:layout_marginLeft="70dip"/>
+ 			<ImageView
+ 			android:id="@+id/Img2"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"		
+ 			android:layout_gravity="center_vertical"
+ 			android:layout_marginLeft="30dip"
+ 			android:background="@drawable/image_border"/>
+ 			<ProgressBar style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:id="@+id/Progress2" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_gravity="center_vertical" android:layout_marginLeft="70dip"/>
+ 			<ImageView
+ 			android:id="@+id/Img3"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"		
+ 			android:layout_gravity="center_vertical"
+ 			android:layout_marginLeft="30dip"
+ 			android:background="@drawable/image_border"/>
+ 			<ProgressBar style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:id="@+id/Progress3" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_gravity="center_vertical" android:layout_marginLeft="70dip"/>
+ 			<ImageView
+ 			android:id="@+id/Img4"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"		
+ 			android:layout_gravity="center_vertical"
+ 			android:layout_marginLeft="30dip"
+ 			android:background="@drawable/image_border"/>
+ 			<ProgressBar style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:id="@+id/Progress4" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_gravity="center_vertical" android:layout_marginLeft="70dip"/>
+ 			 			<ImageView
+ 			android:id="@+id/Img5"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"		
+ 			android:layout_gravity="center_vertical"
+ 			android:layout_marginLeft="30dip"
+ 			android:background="@drawable/image_border"/>
+ 			<ProgressBar style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:id="@+id/Progress5" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_gravity="center_vertical" android:layout_marginLeft="70dip"/>
+ 			</LinearLayout>
+ 			</HorizontalScrollView>
+</LinearLayout>
+ </LinearLayout>

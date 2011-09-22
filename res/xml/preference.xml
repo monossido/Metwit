@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ *      This file is part of Metwit <https://github.com/monossido/Metwit>
+ *      
+ *      Metwit is free software: you can redistribute it and/or modify
+ *      it under the terms of the GNU General Public License as published by
+ *      the Free Software Foundation, either version 3 of the License, or
+ *      (at your option) any later version.
+ *      
+ *      Metwit is distributed in the hope that it will be useful,
+ *      but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *      GNU General Public License for more details.
+ *      
+ *      You should have received a copy of the GNU General Public License
+ *      along with Metwit  If not, see <http://www.gnu.org/licenses/>.
+ *      
+ *-->
+<PreferenceScreen
+   xmlns:android="http://schemas.android.com/apk/res/android" >
+<CheckBoxPreference
+      android:key="GPS"
+      android:title="GPS"
+      android:summary="Usa il GPS al posto della localizzazione via rete"
+      android:defaultValue="false" />
+<CheckBoxPreference
+      android:key="Aggiorna"
+      android:title="Aggiorna all'avvio"
+      android:summary="Aggiorna le segnalazioni all'avvio"
+      android:defaultValue="true" />
+<CheckBoxPreference
+      android:key="Foto"
+      android:title="Foto in Home"
+      android:summary="Visualizza le ultime foto inviate in Home(occorre uscire e rientrare)"
+      android:defaultValue="true" />
+<CheckBoxPreference
+      android:key="AvatarM"
+      android:title="Avatar Mappa"
+      android:summary="Visualizza gli avatar nella mappa"
+      android:defaultValue="true" />
+<Preference
+      android:key="avatar"
+      android:title="Avatar Personale"
+      android:summary="Visualizza e cambia l'Avatar personale"
+	  android:dialogTitle="Avatar"
+      />
+	
+</PreferenceScreen>

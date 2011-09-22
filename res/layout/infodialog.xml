@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ *      This file is part of Metwit <https://github.com/monossido/Metwit>
+ *      
+ *      Metwit is free software: you can redistribute it and/or modify
+ *      it under the terms of the GNU General Public License as published by
+ *      the Free Software Foundation, either version 3 of the License, or
+ *      (at your option) any later version.
+ *      
+ *      Metwit is distributed in the hope that it will be useful,
+ *      but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *      GNU General Public License for more details.
+ *      
+ *      You should have received a copy of the GNU General Public License
+ *      along with Metwit  If not, see <http://www.gnu.org/licenses/>.
+ *      
+ *-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="wrap_content" android:layout_height="wrap_content">
+ 
+<ImageView android:layout_marginRight="5dp" android:id="@+id/IconView01"
+ android:layout_width="wrap_content" android:layout_height="wrap_content"
+ android:src="@drawable/icon" android:layout_alignParentRight="true"/>
+ 
+  
+ <TextView android:layout_marginLeft="5dp" android:text="@string/version" android:id="@+id/Text"
+android:layout_marginTop="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+ 
+ <TextView android:layout_marginLeft="5dp" android:id="@+id/Sitii" android:text="@string/siti" android:layout_below="@+id/Text"
+ android:layout_width="wrap_content" android:layout_height="wrap_content" />
+ 
+ <ScrollView android:id="@+id/ScrollView" android:layout_marginTop="10dip"
+ android:layout_width="wrap_content" android:layout_below="@+id/Sitii"
+ android:layout_height="160dp">
+ <RelativeLayout
+ android:layout_width="wrap_content" android:layout_height="wrap_content">
+ <TextView android:layout_marginLeft="5dp" android:id="@+id/Metwit" android:text="@string/infometwit"
+ android:layout_width="wrap_content" android:layout_height="wrap_content" />
+ </RelativeLayout>
+ </ScrollView>
+  <TextView android:layout_marginLeft="5dp" android:layout_marginTop="10dp" android:id="@+id/mail" android:text="Per problemi o consigli riguardo l'applicazione contattare lo sviluppatore monossido@lorenzobraghetto.com" android:layout_below="@+id/ScrollView"
+ android:layout_width="wrap_content" android:layout_height="wrap_content" />
+ 
+ <Button android:id="@+id/Cancel" android:layout_marginTop="5dp" android:layout_below="@+id/mail"
+ android:layout_width="wrap_content" android:layout_height="wrap_content"
+ android:layout_centerHorizontal="true" android:text="OK" />
+ 
+</RelativeLayout>

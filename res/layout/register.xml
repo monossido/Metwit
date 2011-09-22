@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ *      This file is part of Metwit <https://github.com/monossido/Metwit>
+ *      
+ *      Metwit is free software: you can redistribute it and/or modify
+ *      it under the terms of the GNU General Public License as published by
+ *      the Free Software Foundation, either version 3 of the License, or
+ *      (at your option) any later version.
+ *      
+ *      Metwit is distributed in the hope that it will be useful,
+ *      but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *      GNU General Public License for more details.
+ *      
+ *      You should have received a copy of the GNU General Public License
+ *      along with Metwit  If not, see <http://www.gnu.org/licenses/>.
+ *      
+ *-->
+<RelativeLayout
+android:id="@+id/register1"
+android:layout_width="250dip"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<EditText android:layout_centerHorizontal="true" android:layout_height="wrap_content" android:id="@+id/UserR" android:hint="Username" android:layout_width="200dip"></EditText>
+<EditText android:layout_centerHorizontal="true" android:layout_height="wrap_content" android:id="@+id/PasswordR" android:hint="Password" android:layout_below="@+id/UserR" android:layout_width="200dip" android:password="true"></EditText>
+<EditText android:layout_centerHorizontal="true" android:layout_height="wrap_content" android:id="@+id/MailR" android:hint="E-mail" android:layout_below="@+id/PasswordR" android:layout_width="200dip" ></EditText>
+
+<ProgressBar style="@android:style/Widget.ProgressBar"
+            android:id="@+id/localitaR" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_below="@+id/MailR" android:layout_marginLeft="30dip" />
+<Button android:layout_height="wrap_content" android:id="@+id/LocalitaR" android:text="Inserisci località" android:layout_width="wrap_content" android:layout_below="@+id/MailR" android:layout_marginLeft="120dip"></Button>
+<ProgressBar style="@android:style/Widget.ProgressBar"
+            android:id="@+id/trasformaR" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_below="@+id/MailR" android:layout_marginLeft="140dip" />
+<Button android:layout_below="@+id/MailR" android:layout_marginLeft="7dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rileva località" android:id="@+id/Rileva"></Button>
+<Button android:layout_height="wrap_content" android:id="@+id/InviaR" android:text="Registrati" android:layout_width="wrap_content" android:layout_below="@+id/MailR" android:layout_marginTop="50dip" android:layout_centerHorizontal="true"></Button>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="/home/monossido/Metwit/libs/apache-mime4j-core-0.7.jar"/>
+	<classpathentry kind="lib" path="/home/monossido/Metwit/libs/base64coder.jar"/>
+	<classpathentry kind="lib" path="/home/monossido/Metwit/libs/httpmime-4.1.2.jar"/>
+	<classpathentry kind="lib" path="/home/monossido/Metwit/libs/overlaymanager-1.0.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

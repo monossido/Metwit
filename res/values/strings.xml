@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ *      This file is part of Metwit <https://github.com/monossido/Metwit>
+ *      
+ *      Metwit is free software: you can redistribute it and/or modify
+ *      it under the terms of the GNU General Public License as published by
+ *      the Free Software Foundation, either version 3 of the License, or
+ *      (at your option) any later version.
+ *      
+ *      Metwit is distributed in the hope that it will be useful,
+ *      but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *      GNU General Public License for more details.
+ *      
+ *      You should have received a copy of the GNU General Public License
+ *      along with Metwit  If not, see <http://www.gnu.org/licenses/>.
+ *      
+ *-->
+<resources>
+    <string name="version">v0.7.2</string>
+    <string name="siti">Sviluppato da Lorenzo Braghetto:\n\twww.lorenzobraghetto.com\n\twww.twitter.com/monossido\n\nper metwit\n\twww.metwit.net\n\twww.twitter.com/metwitnet</string>
+    <string name="app_name">Metwit</string>
+    <string name="infometwit">Sei un meteoappassionato? Ami la meteorologia?
+    Vuoi condividere i tuoi dati meteo con altri? Registrati gratuitamente ed invia le tue segnalazioni meteo dalla tua località contribuendo gratuitamente ed in modo facile e veloce.
+Renditi protagonista nella mappa con le tue segnalazioni!\n\n<b>Changelog:</b>\n<b>v0.7.2</b>\n-Bugfix\n<b>v0.7</b>\n-Opzioni aggiuntive in Impostazioni\n<b>v0.6.1</b>\n-Bugfix pagina segnalazione e condivisione da galleria\n<b>v0.6</b>\n-Bugfix nella pagina invio segnalazione\n-Ultime immagini inviate nella Home\n-Gestione Avatar nelle impostazioni\n<b>v0.5</b>\n-Supporto alle immagini nelle segnalazioni!!\n-Avatar degli utenti nella mapppa\n-Bugfix generali\n<b>v0.4.1</b>\n-CrashFix mappa\n<b>v0.4</b>\n-Modifiche "sotto il cofano" (Sqlite)\n-Ottimizzazione\n-Ritocchi UI\n<b>v0.3.1</b>\n-BugFix Landscape Mappa\n<b>v0.3</b>\n-Ritocchi alla UI\n-Bugfix\n<b>v0.2.1</b>\n-BugFix inserimento località\n-Commento segnalazione non più obligatorio\n-Localizzazione sempre via network al primo avvio\n-Migliorata la velocità\n<b>v0.2</b>\n-UI completamente ridisegnata\n-Landscape\n-BugFix\n<b>v0.1.2</b>\n-BugFix nell\'invio di una segnalazione\n<b>v0.1</b>\n-Versione iniziale Metwit</string>
+</resources>

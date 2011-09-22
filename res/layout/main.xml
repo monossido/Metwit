@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ *      This file is part of Metwit <https://github.com/monossido/Metwit>
+ *      
+ *      Metwit is free software: you can redistribute it and/or modify
+ *      it under the terms of the GNU General Public License as published by
+ *      the Free Software Foundation, either version 3 of the License, or
+ *      (at your option) any later version.
+ *      
+ *      Metwit is distributed in the hope that it will be useful,
+ *      but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *      GNU General Public License for more details.
+ *      
+ *      You should have received a copy of the GNU General Public License
+ *      along with Metwit  If not, see <http://www.gnu.org/licenses/>.
+ *      
+ *-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   >
+    <LinearLayout style="@style/TitleBar">
+        <ImageView style="@style/TitleBarLogo"
+            android:contentDescription="description_logo"
+            android:src="@drawable/title_logo"
+            android:onClick="onHomeClick" />
+
+        <View style="@style/TitleBarSpring" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:id="@+id/btn_title_refresh"
+            android:contentDescription="description_refresh"
+            android:src="@drawable/ic_title_refresh"
+            android:onClick="onRefreshClick" />
+        <ProgressBar style="@style/TitleBarProgressIndicator"
+            android:id="@+id/title_refresh_progress"
+            android:visibility="gone" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="description_search"
+            android:src="@drawable/ic_title_search"
+            android:onClick="onSendClick" />
+    </LinearLayout>
+<RelativeLayout
+android:id="@+id/widget28"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/background"
+xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<TextView android:textColor="#000" android:text="Riepilogo" android:id="@+id/Titolo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="20dip" android:textStyle="bold" android:layout_centerHorizontal="true"></TextView>
+<TextView android:textColor="#000" android:layout_below="@+id/Titolo" android:text="Numero di segnalazioni:" android:id="@+id/SegnalazioniT" android:layout_height="wrap_content" android:layout_width="wrap_content"  android:textSize="15dip" android:textStyle="bold" android:layout_centerHorizontal="true" android:layout_marginTop="15dp"></TextView>
+<TextView android:textColor="#000" android:layout_below="@+id/SegnalazioniT" android:id="@+id/NSegnalazioni" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="15dip" android:layout_centerHorizontal="true"></TextView>
+<TextView android:textColor="#000" android:layout_below="@+id/NSegnalazioni" android:text="Segnalazione meteo più vicina" android:id="@+id/SegnVT" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textSize="15dip" android:textStyle="bold" android:layout_centerHorizontal="true" android:layout_marginTop="15dp"></TextView>
+<TextView android:id="@+id/SegnVTx" android:layout_height="wrap_content" android:layout_toRightOf="@+id/SegnV" android:layout_width="wrap_content" android:layout_below="@+id/SegnVT" android:textSize="13dip" android:textColor="#000" android:layout_marginTop="10dip"></TextView>
+<ProgressBar style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:id="@+id/TuaSegnProgress1" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_below="@+id/SegnVT" android:layout_marginTop="30dip" android:layout_marginLeft="140dip"/>
+<ImageView android:layout_below="@+id/SegnVT" android:id="@+id/SegnV" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginLeft="30dip"></ImageView>
+<TextView android:layout_centerHorizontal="true" android:layout_width="wrap_content" android:text="Tua segnalazione" android:id="@+id/TuaSegnT" android:layout_height="wrap_content" android:textSize="15dip" android:textStyle="bold" android:textColor="#000" android:layout_below="@+id/SegnV" android:layout_marginTop="20dp"></TextView>
+<ImageView android:layout_marginLeft="30dip" android:layout_height="wrap_content" android:id="@+id/TuaSegnImg" android:layout_width="wrap_content" android:layout_below="@+id/TuaSegnT"></ImageView>
+<TextView android:layout_toRightOf="@+id/TuaSegnImg" android:layout_width="wrap_content" android:text="" android:id="@+id/TuaSegn" android:layout_height="wrap_content" android:layout_below="@+id/TuaSegnT" android:textColor="#000" android:layout_marginTop="10dp"></TextView>
+<ProgressBar style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:id="@+id/TuaSegnProgress2" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_below="@+id/TuaSegnT" android:layout_marginTop="30dip" android:layout_marginLeft="140dip"/>
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ *      This file is part of Metwit <https://github.com/monossido/Metwit>
+ *      
+ *      Metwit is free software: you can redistribute it and/or modify
+ *      it under the terms of the GNU General Public License as published by
+ *      the Free Software Foundation, either version 3 of the License, or
+ *      (at your option) any later version.
+ *      
+ *      Metwit is distributed in the hope that it will be useful,
+ *      but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *      GNU General Public License for more details.
+ *      
+ *      You should have received a copy of the GNU General Public License
+ *      along with Metwit  If not, see <http://www.gnu.org/licenses/>.
+ *      
+ *-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   >
+    <LinearLayout style="@style/TitleBar">
+        <ImageView style="@style/TitleBarLogo"
+            android:contentDescription="description_logo"
+            android:src="@drawable/title_logo"
+            android:onClick="onHomeClick" />
+
+        <View style="@style/TitleBarSpring" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:id="@+id/btn_title_refresh"
+            android:contentDescription="description_refresh"
+            android:src="@drawable/ic_title_refresh"
+            android:onClick="onRefreshClick" />
+        <ProgressBar style="@style/TitleBarProgressIndicator"
+            android:id="@+id/title_refresh_progress"
+            android:visibility="gone" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+        	android:id="@+id/Send"
+            android:contentDescription="description_search"
+            android:src="@drawable/ic_title_search"
+            android:onClick="onSendClick" />
+    </LinearLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:apiKey="0Xchti2Ei3eQg0W1XRwOaqb3c0s4Dn5JfupXOcg"
+    />
+    	
+    	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:id="@+id/image" 
+  	android:orientation="vertical"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignParentTop="true"
+	android:layout_centerHorizontal="true" 
+	android:visibility="gone"
+	android:background="@drawable/backgroundmap"
+   >
+   
+           <ImageView
+           android:id="@+id/meteo"
+    	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		/>
+		<TextView android:textSize="15sp" android:textStyle="bold" android:layout_marginLeft="3dp" android:id="@+id/User" android:textColor="#000"
+	android:layout_marginTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/meteo"/>
+	           <ImageView
+           android:id="@+id/avatar"
+    	android:layout_width="30dip"
+		android:layout_height="30dip"
+		android:layout_toRightOf="@+id/User"
+		android:layout_marginTop="6dp"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="3dip"
+		/>
+	<TextView android:textSize="11sp" android:textStyle="bold" android:layout_marginLeft="3dp" android:id="@+id/localita" android:textColor="#000"
+	android:layout_marginTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/meteo"  android:layout_below="@+id/User"/>
+	<ProgressBar style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:id="@+id/LocalitaProgress1" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_below="@+id/User"  android:layout_toRightOf="@+id/meteo" android:layout_marginTop="3dip" android:layout_marginLeft="6dip"/>
+	
+   		<TextView android:textSize="11sp" android:layout_marginLeft="3dp" android:id="@+id/commento" android:textColor="#000"
+	android:layout_marginTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/meteo" android:layout_below="@+id/localita"/>
+   		<TextView android:textSize="11sp" android:layout_marginLeft="3dp" android:id="@+id/data" android:textColor="#000"
+	android:layout_marginTop="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/meteo" android:layout_below="@+id/commento"/>
+   
+              <ImageView
+           android:id="@+id/from"
+    	android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp"
+		android:layout_below="@+id/data"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="3dip"
+		/>
+   </RelativeLayout> 
+   	
+    	<LinearLayout android:id="@+id/bar" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:paddingRight="15px"
+		android:paddingBottom="15px"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true">
+
+		<ImageView android:id="@+id/loader" 
+		android:visibility="invisible"
+		android:layout_width="25px"
+		android:layout_height="26px" 
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true" />
+		
+	</LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>

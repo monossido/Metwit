@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ *      This file is part of Metwit <https://github.com/monossido/Metwit>
+ *      
+ *      Metwit is free software: you can redistribute it and/or modify
+ *      it under the terms of the GNU General Public License as published by
+ *      the Free Software Foundation, either version 3 of the License, or
+ *      (at your option) any later version.
+ *      
+ *      Metwit is distributed in the hope that it will be useful,
+ *      but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *      GNU General Public License for more details.
+ *      
+ *      You should have received a copy of the GNU General Public License
+ *      along with Metwit  If not, see <http://www.gnu.org/licenses/>.
+ *      
+ *-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   >
+       <LinearLayout style="@style/TitleBar">
+        <ImageView style="@style/TitleBarLogo"
+            android:contentDescription="description_logo"
+            android:src="@drawable/title_logo"
+            android:onClick="onHomeClick" />
+
+        <View style="@style/TitleBarSpring" />
+
+        <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="description_search"
+            android:src="@drawable/ic_button_map"
+            android:onClick="onMappaClick" />
+
+    </LinearLayout>
+<RelativeLayout
+android:id="@+id/widget28"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/background"
+xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<TextView
+android:id="@+id/Benvenuto"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:textSize="20sp"
+android:textColor="#000"
+android:textStyle="bold"
+android:text="Benvenuto in Metwit" android:layout_marginLeft="50dp"/>
+
+<EditText
+android:id="@+id/user"
+android:layout_width="180dip"
+android:layout_height="60dip"
+android:layout_marginTop="20dip"
+android:layout_centerHorizontal="true"
+android:textSize="17dip"
+android:hint="Username"
+android:layout_below="@+id/Benvenuto"
+>
+</EditText>
+
+<EditText
+android:id="@+id/pswd"
+android:layout_width="180dip"
+android:layout_height="60dip"
+android:layout_below="@+id/user"
+android:layout_centerHorizontal="true"
+android:password="true"
+android:textSize="17dip"
+android:hint="Password"
+>
+</EditText>
+<Button
+android:id="@+id/login"
+android:layout_width="140dip"
+android:layout_height="wrap_content"
+android:text="Login"
+android:layout_below="@+id/pswd"
+android:layout_centerHorizontal="true"
+>
+</Button>
+<Button
+android:id="@+id/register"
+android:layout_width="140dip"
+android:layout_height="wrap_content"
+android:text="Registrati"
+android:layout_below="@+id/login"
+android:layout_centerHorizontal="true"
+>
+</Button>
+<TextView
+android:id="@+id/testo"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_below="@+id/register"
+android:layout_marginLeft="23dip"
+android:layout_marginTop="10dip"
+android:textSize="15dip"
+android:textColor="#000"
+android:text="Per poter utilizzare l'applicazione occorre essere registrati al sito metwit.net"
+>
+</TextView>
+</RelativeLayout>
+</LinearLayout>

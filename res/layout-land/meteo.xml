@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--/*
+ *      This file is part of Metwit <https://github.com/monossido/Metwit>
+ *      
+ *      Metwit is free software: you can redistribute it and/or modify
+ *      it under the terms of the GNU General Public License as published by
+ *      the Free Software Foundation, either version 3 of the License, or
+ *      (at your option) any later version.
+ *      
+ *      Metwit is distributed in the hope that it will be useful,
+ *      but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *      GNU General Public License for more details.
+ *      
+ *      You should have received a copy of the GNU General Public License
+ *      along with Metwit  If not, see <http://www.gnu.org/licenses/>.
+ *      
+ *-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   android:focusable="true" android:focusableInTouchMode="true" 
+   >
+    <LinearLayout style="@style/TitleBar">
+        <ImageView style="@style/TitleBarLogo"
+            android:contentDescription="description_logo"
+            android:src="@drawable/title_logo" 
+            android:onClick="onHomeClick"/>
+
+        <View style="@style/TitleBarSpring" />
+
+                    <ImageView style="@style/TitleBarSeparator" />
+        <ImageButton style="@style/TitleBarAction"
+            android:contentDescription="description_search"
+            android:src="@drawable/ic_button_map"
+            android:onClick="onMappaClick" />
+    </LinearLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/ScrollView01"
+android:background="@drawable/background_land"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:fadingEdge="none">
+<RelativeLayout
+android:id="@+id/widget28"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+<TextView android:textColor="#000" android:layout_height="wrap_content" android:text="Nuova segnalazione" android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_centerHorizontal="true" android:layout_marginTop="10dip" android:textSize="20dip" android:textStyle="bold"></TextView>
+<Button android:id="@+id/Button01"  android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Condizione meteo" android:layout_marginTop="8dip" android:layout_below="@+id/TextView03" android:layout_centerHorizontal="true"></Button><ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ImageView01" android:layout_toRightOf="@+id/TextView03" android:layout_marginLeft="10dip"></ImageView>
+<TextView android:textColor="#000"  android:layout_centerHorizontal="true" android:textStyle="bold" android:text="Fonte della segnalazione" android:layout_below="@+id/Button01" android:id="@+id/TextView01" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="10dip"></TextView>
+    <ImageView android:layout_centerHorizontal="true" android:layout_above="@+id/TextView01" android:id="@+id/ImageView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/board" />
+    <RadioGroup
+    android:layout_below="@+id/TextView01"
+    android:id="@+id/RadioGroup"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" android:orientation="horizontal" android:layout_centerHorizontal="true">
+<RadioButton android:layout_marginLeft="100dip" android:id="@+id/RadioButton01" android:layout_height="wrap_content" android:layout_width="wrap_content"></RadioButton><RadioButton android:layout_marginLeft="100dip" android:id="@+id/RadioButton02"  android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_toRightOf="@+id/RadioButton01"></RadioButton><RadioButton android:layout_marginLeft="100dip" android:id="@+id/RadioButton03"  android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_toRightOf="@+id/RadioButton02"></RadioButton>
+</RadioGroup>
+<TextView  android:text="Te stesso" android:id="@+id/TextView04" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/RadioGroup" android:layout_marginLeft="80dip" android:textColor="#000"></TextView>
+<TextView android:text="Sito web/Forum" android:id="@+id/TextView05" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/TextView04" android:layout_marginLeft="210dip"  android:textColor="#000"></TextView>
+<TextView android:text="Conoscente" android:id="@+id/TextView06" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/TextView05" android:layout_marginLeft="360dip"  android:textColor="#000"></TextView>
+
+
+<ImageView android:src="@drawable/board" android:layout_marginTop="8dp" android:layout_centerHorizontal="true" android:layout_below="@+id/TextView05" android:id="@+id/ImageView03" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageView>
+<TextView android:textColor="#000" android:layout_centerHorizontal="false" android:textStyle="bold" android:layout_below="@+id/ImageView03" android:id="@+id/TextView02" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginLeft="15dip" android:text="Località della segnalazione:" android:layout_marginTop="8dip"></TextView>
+<Button android:layout_below="@+id/TextView02" android:layout_height="wrap_content" android:id="@+id/Button02" android:layout_width="wrap_content" android:text="Rileva la posizione" android:layout_marginLeft="38dip"></Button>
+<Button android:layout_below="@+id/TextView02" android:layout_marginLeft="25dip" android:layout_marginTop="50dip" android:layout_height="wrap_content" android:id="@+id/Button03" android:layout_width="wrap_content" android:text="Inserisci manualmente"></Button>
+<ProgressBar style="@android:style/Widget.ProgressBar.Inverse"
+            android:id="@+id/rilevamento" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_below="@+id/TextView02" android:layout_marginLeft="90dip"/>
+<EditText android:id="@+id/EditText01" android:layout_below="@+id/ImageView03" android:layout_height="100dip" android:layout_width="300dip" android:layout_centerInParent="false" android:hint="Commento" android:layout_marginTop="23dp" android:layout_marginLeft="220dp"></EditText>
+<ProgressBar style="@android:style/Widget.ProgressBar.Inverse"
+            android:id="@+id/conversione" android:layout_height="wrap_content" android:layout_width="wrap_content" 
+            android:visibility="gone" android:layout_below="@+id/Button02" android:layout_marginLeft="80dip"/>
+<Button android:layout_below="@+id/EditText01" android:layout_marginTop="5dp" android:layout_height="wrap_content" android:id="@+id/PickImage" android:text="Aggiungi foto" android:layout_width="wrap_content" android:layout_centerInParent="true"></Button>
+<ImageView android:layout_toLeftOf="@+id/PickImage" android:layout_below="@+id/EditText01" android:id="@+id/Image" android:layout_height="50dip"  android:layout_width="75dip" android:layout_marginRight="50dip" android:layout_marginTop="3dip"></ImageView>
+<Button android:layout_below="@+id/PickImage" android:layout_height="wrap_content" android:id="@+id/Button04" android:text="Invia Segnalazione" android:layout_width="wrap_content" android:layout_centerInParent="true"></Button>
+
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>
